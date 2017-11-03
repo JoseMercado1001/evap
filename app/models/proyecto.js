@@ -1,7 +1,10 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  duracion: DS.attr(''),
-  vpn: DS.attr(''),
-  recuperacion: DS.attr(''),
+  nombre: DS.attr('string'),
+  duracion: DS.attr('number'),
+  vpn: DS.attr('number'),
+  recuperacion: DS.attr('number'),
+  riesgo: DS.attr('number'),
+  criterio: DS.hasMany('criterio')
 });
